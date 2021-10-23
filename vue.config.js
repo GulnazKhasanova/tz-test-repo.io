@@ -2,6 +2,10 @@ const path = require('path')
 
 module.exports = {
   lintOnSave: false,
+  publicPath: process.env.NODE_ENV === 'production'
+  ? './'
+  : '/',
+  outputDir: 'docs',
   css: {
     loaderOptions: {
       scss: {
@@ -28,7 +32,7 @@ module.exports = {
     config.resolve.alias
       .set('@c', path.resolve(__dirname, 'src/components'))
       .set('@cf', path.resolve(__dirname, 'src/components/filterscomponents'))
-      .set('@cs', path.resolve(__dirname, 'src/components/sliderscomponents'))
+      .set('@cs', path.resolve(__dirname, 'src/components/slidersComponents'))
       .set('@cv', path.resolve(__dirname, 'src/components/views'))
       // .set('@r', path.resolve(__dirname, 'src/router'))
       // .set('@p', path.resolve(__dirname, 'src/views'))

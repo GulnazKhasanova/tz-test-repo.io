@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import carousel from "@/components/sliderscomponents/carouselItem"
+import carousel from "@/components/slidersComponents/carouselItem"
 export default {
 name: "componentCarousel",
   components: {carousel},
@@ -49,23 +49,23 @@ name: "componentCarousel",
       images: [
         {
           id: '1',
-          big: 'https://via.placeholder.com/445x347',
-          thumb: 'https://via.placeholder.com/100x95'
+          big: require('@/assets/img/carousel/big/p1.jpeg'),
+          thumb: require('@/assets/img/carousel/small/p1.jpeg')
         },
         {
           id: '2',
-          big: 'https://via.placeholder.com/445x347',
-          thumb: 'https://via.placeholder.com/100x95'
+          big: require('@/assets/img/carousel/big/p2.jpeg'),
+          thumb: require('@/assets/img/carousel/small/p2.jpeg')
         },
         {
           id: '3',
-          big: 'https://via.placeholder.com/445x347',
-          thumb: 'https://via.placeholder.com/100x95'
+          big: require('@/assets/img/carousel/big/p3.jpeg'),
+          thumb: require('@/assets/img/carousel/small/p3.jpeg')
         },
         {
           id: '4',
-          big: 'https://via.placeholder.com/445x347',
-          thumb: 'https://via.placeholder.com/100x95'
+          big: require('@/assets/img/carousel/big/p4.jpeg'),
+          thumb: require('@/assets/img/carousel/small/p4.jpeg')
         }
       ]
     }

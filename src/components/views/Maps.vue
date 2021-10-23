@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Mapcomponent from "@/components/mapcomponent/mapcomponent";
+import Mapcomponent from "@/components/mapComponent/mapComponent";
 export default {
 name: "Maps",
   data(){
@@ -21,6 +21,7 @@ name: "Maps",
   max-width: 1350px;
   min-height: 450px;
   width: 100%;
+  border-radius: 50px;
 }
 
 </style>
